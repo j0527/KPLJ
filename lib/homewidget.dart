@@ -31,6 +31,9 @@ class _HomeWidgetState extends State<HomeWidget> with SingleTickerProviderStateM
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text("소🐶팅"),
+      ),
       body: TabBarView(
         controller: tabController,
         children: const [
