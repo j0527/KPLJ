@@ -1,3 +1,4 @@
+import 'package:blind_dating/components/%08getX_location_model.dart';
 import 'package:blind_dating/components/imageSlider_widget.dart';
 import 'package:blind_dating/model/indicatorCurrent_model.dart';
 import 'package:blind_dating/model/sliderItems_model.dart';
@@ -7,9 +8,6 @@ import 'package:get/get.dart';
 
 class MainPage extends StatelessWidget {
   MainPage({super.key});
-
-  final CarouselController _controller = CarouselController(); // 이미지 슬라이더를 제어하기 위한 기본적인 컨트롤러
-  final IndicatorCurrent indicatorCurrent = Get.put(IndicatorCurrent()); // 현재 이미지 슬라이더의 상태를 관리하는 GetX 컨트롤러
 
   // 이미지와 텍스트 가지는 더미데이터 리스트
   final List<SliderlItems> carouselItems = [
@@ -35,6 +33,14 @@ class MainPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+  final CarouselController _controller = CarouselController(); // 이미지 슬라이더를 제어하기 위한 기본적인 컨트롤러
+  final IndicatorCurrent indicatorCurrent = Get.put(IndicatorCurrent()); // 현재 이미지 슬라이더의 상태를 관리하는 GetX 컨트롤러
+  final GetXLocation locationController = Get.put(GetXLocation()); // 위치와 관련된 getXmodel
+  
+  double calcDistance = locationController.calculateDistance(); // getXmodel에서 계산된 거리를 담을 변수
+  String unit = "m"; // 기본 거리 단위를 m로 지정
+
     return Scaffold(
       body: Center(
         child: Column(
@@ -89,4 +95,5 @@ class MainPage extends StatelessWidget {
         ),
       );
   }
-}
+} // ---- Functions ----
+

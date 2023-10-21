@@ -3,10 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>소🐶팅이 지속적으로 위치정보에 접근하기 위해 권한이 필요합니다.</string>
+	<string>Blind Dating이 지속적으로 위치정보에 접근하기 위해 권한이 필요합니다.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>소🐶팅이 위치정보에 접근하기 위해 권한이 필요합니다.</string>
-	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<string>Blind Dating이 위치정보에 접근하기 위해 권한이 필요합니다.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
