@@ -95,7 +95,7 @@ class CarouselSliderWidget extends StatelessWidget {
                               const SizedBox(
                                 width: 10,
                               ),
-                              Text(item.userDestance,
+                              Text(item.userDistance,
                                 style: const TextStyle(
                                   fontSize: 15, fontWeight: FontWeight.bold, color: Colors.black)),
                               const SizedBox(
