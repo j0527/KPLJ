@@ -36,7 +36,7 @@ class _HomeWidgetState extends State<HomeWidget> with SingleTickerProviderStateM
       ),
       body: TabBarView(
         controller: tabController,
-        children: const [
+        children: [
           MainPage(),      // 태영 메인 페이지
           Chats(),         // 진 채팅 페이지       
           Profile()        // ?? 프로필 페이지
