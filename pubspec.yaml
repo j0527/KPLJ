@@ -35,8 +35,10 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  get: ^4.6.6
-  carousel_slider: ^4.2.1
+  get: ^4.6.6 # 상태관리
+  carousel_slider: ^4.2.1 # 이미지 슬라이더
+  geolocator: ^10.1.0 # 위치정보 받아오기
+  permission_handler: ^11.0.1 # 사용권한 동의
 
 dev_dependencies:
   flutter_test:
